@@ -13,8 +13,8 @@ def  Server(clientsocket,addr):
     
 def main():
     serversocket = socket.socket() 
-    host = socket.gethostname()
-    port = 9999
+    host = '172.0.0.1'
+    port = 3333
     serversocket.bind((host, port))
     serversocket.listen(20)
     print ("serversocket is running,waiting client connect...")
